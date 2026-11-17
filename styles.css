@@ -16,13 +16,16 @@
         header{
 background-color:rgb(245, 242, 232);
 color:black;
+font-family: 'Atkinson Hyperlegible', Verdana, sans-serif;
 }
 body{
 background-color:rgb(245, 242, 232);
 color:black;
+font-family: 'Atkinson Hyperlegible', Verdana, sans-serif;
 }
 footer{
 background-color:rgb(245, 242, 232);
+font-family: 'Atkinson Hyperlegible', Verdana, sans-serif;
 }
         ul{
          display:flex ;
