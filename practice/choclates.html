@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(135deg, #1a2980, #26d0ce);
+                height: 100vh;
+            }
+            h1{
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                color: white;
+            }
+            .container {
+              display: grid;
+              width: 80vw;
+              height: 80vh;
+              margin: auto;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              background-color: Thistle;
+              padding: 10px;
+              border-radius: 20px;
+              border: 8px solid red;
+            }
+            .heart {
+              height: 20vh; /* adjust to control the size */
+              aspect-ratio: 1;
+              --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+              -webkit-mask-box-image: var(--_m);
+                         mask-border: var(--_m);
+              clip-path: polygon(-41% 0,50% 91%, 141% 0);
+              background-color: chocolate;
+              margin: auto;
+            }
+            /* fallback until better support for mask-border */
+            @supports not (-webkit-mask-box-image: var(--_m)) { 
+              .heart {
+                mask:
+                 radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+                 radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+                 conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
+              }
+            }
+            #chocolateheart{
+                grid-column-start: 3;
+                grid-row-start:2;
+            }
+            #mnm1{
+                grid-column-start:1;
+                grid-row-start:1;
+                width:150px;
+                height:150px;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+            .reeses1{
+            grid-column:1;
+            grid-row:2;
+            width: 200px; /* adjust to control the size */
+            aspect-ratio: 1;
+            background-color: rgb(255, 82, 0);
+            clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+            }
+            .reeses2 {
+            grid-column:2;
+            grid-row:2;
+            width: 200px; /* adjust to control the size */
+            aspect-ratio: 1;
+            background-color: rgb(255, 82, 0);
+            clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+            }
+            .reeses3 {
+            grid-column:2;
+            grid-row:3;
+            width: 200px; /* adjust to control the size */
+            aspect-ratio: 1;
+            background-color: rgb(255, 82, 0);
+            clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+            }
+            .reeses4 {
+            grid-column:1;
+            grid-row:3;
+            width: 200px; /* adjust to control the size */
+            aspect-ratio: 1;
+            background-color: rgb(255, 82, 0);
+            clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+            }         
+            .tri-angle1 {
+            grid-column:3;
+            grid-row:1;
+            /* HTML: <div class="hexagon"></div> */
+            height: 200px; /* adjust to control the size  */
+            aspect-ratio: 1/cos(30deg);
+            clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+            background: brown;
+            }
+             .tri-angle2 {
+           grid-column:3;
+          grid-row:3;
+       /* HTML: <div class="hexagon"></div> */
+     height: 200px; /* adjust to control the size  */
+        aspect-ratio: 1/cos(30deg);
+        clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+            background: brown;
+            }
+ .tri-angle3 {
+           grid-column:1;
+          grid-row:1;
+       /* HTML: <div class="hexagon"></div> */
+     height: 200px; /* adjust to control the size  */
+        aspect-ratio: 1/cos(30deg);
+        clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+            background: brown;
+            }
+
+            .hershey{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row: 1;
+            width: 300px;
+            height: 150px;
+            aspect-ratio: 1;
+            background-color: rgb(54, 25, 30);
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>Here, I got you some chocolates &lt;3</h1>
+        <div class="container">
+            <div class="heart" id="chocolateheart"></div>
+            <div id="mnm"></div>
+            <div class="reeses1"></div>
+            <div class="reeses2"></div>
+            <div class="reeses3"></div>
+            <div class="reeses4"></div>
+            <div class="hershey"></div>
+            <div class="tri-angle1"></div>
+            <div class="tri-angle2"></div>
+            <div class="tri-angle3"></div>
+                <!-- TODO: Add some more divs here, and style them
+                    to fill in the 'lilbits' part of the chocolate box -->
+            </div>
+            <!-- TODO: Add some more divs here, and style them
+                to fill in the other sections of the chocolate box -->
+        </div>
+    </body>
+</html> 
