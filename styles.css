@@ -1,0 +1,45 @@
+  body{
+            background-color: magenta;
+        }
+        table, tr, th, td{
+            border: 1px black solid;
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        header,footer{
+            background-color: yellow;
+        }
+        footer{
+            color: black;
+            font-size: 2em;
+        }
+        header{
+            background-color: cyan;
+        }
+        .orange{
+            background-color: orange;
+        }
+        header{
+            border: 5px black solid;
+            margin: 20px;
+            margin-left: 0px;
+            padding: 100px;
+        }
+        ul{
+         display:flex ;
+        flex-direction:row;
+        list-style: none;
+        padding:0;
+        margin:0;
+        justify-content:space-evenly;
+    }    
+        a{
+            background-color: cyan;
+            padding:15px;
+            border:2px black solid;
+            text-decoration:none;
+                
+    }
+    a:hover{
+        color: black;
+    }
